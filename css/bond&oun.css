@@ -25,4 +25,26 @@ nav ul li a {
   font-size: 20px;
   text-decoration: none;
   text-transform: uppercase;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+.container h1 {
+  text-align: center;
+}
+.container .we {
+  margin: auto;
+}
+.container .we .me {
+  display: flex;
+}
+.container .we .me img {
+  width: 50%;
+}
+.container .we .me .main-right {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
 }/*# sourceMappingURL=bond&oun.css.map */

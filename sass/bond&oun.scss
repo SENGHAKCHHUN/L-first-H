@@ -1,1 +1,23 @@
 @import "./variables/nav";
+
+.container{
+    display: flex;
+    flex-direction: column;
+    h1{
+        text-align: center;
+    }
+    .we{
+        margin: auto;
+        .me{
+            display: flex;
+            img{
+                width: 50%;
+            }
+            .main-right{
+                display: flex;
+                flex-direction: column;
+                padding: 20px;
+            }
+        }
+    }
+}
