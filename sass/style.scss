@@ -1,39 +1,43 @@
-body{
-    margin: 0px;
-    padding: 0px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    background: #EBFFEE;
-    img {
-        width: 100%;
-    }
-}
-nav{
-    background: pink;
-    padding: 5px;
-    ul {
-        display: flex;
-        justify-content: space-around;
-        li{
-            list-style: none;
-            a{
-                font-size: 20px;
-                text-decoration: none;
-                text-transform: uppercase;
-            }
-        }
-    }
-}
+@import "./variables/nav";
 .container{
     .main{
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 350px;
         text-align: center;
+        margin: 100px 0px;
         img{
             width: 250px;
             height: 250px;
             border-radius: 10%;
+        }
+    }
+    h1{
+        font-size: 40px;
+        color: rgb(255, 157, 173);
+        text-align: center;
+    }
+    h3{
+        text-align: center;
+        font-size: 25px;
+    }
+
+}
+footer{
+    background: rgb(255, 157, 173);
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    h1{
+        text-align: center;
+    }
+    .icon{
+        .fa {
+            font-size: 30px;
+            color: pink;
+            padding: 10px;
         }
     }
 }
