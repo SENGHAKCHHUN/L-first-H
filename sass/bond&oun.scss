@@ -3,37 +3,41 @@
 .container{
     display: flex;
     flex-direction: column;
+    padding: 5% 20%;
+    @include responsive ('Mobile') {
+        padding: 0% 5%;
+    }
     h1{
         text-align: center;
+        padding: 20px;
+        @include responsive ('Mobile') {
+            font-size: 25px;
+        }
     }
-    .we{
-        margin: 5% 0%;
-        .b1{
-            padding: 0% 20%;
-            @include center;
+    .b1{
+        display: flex;
+        align-items: center;
+        @include responsive ('Mobile') {
+            flex-direction: column;
+        }
+        img{
+            width: 50%;
+        }
+        .main-right{
+            padding: 20px;
             @include responsive ('Mobile') {
-                flex-direction: column;
-                padding: 0%;
-            img{
-                height: 40%;
-                width: 50%;
-            }
-            .main-right{
-                display: flex;
-                flex-direction: column;
-                padding: 20px;
-                @include responsive("Mobile"){
-                    h3{
-                        text-align: center;
-                    }
-                }
+               h3{
+                text-align: center;
+               }
             }
         }
-        .b2{
+    }
+    .b2{
+        @extend .b1;
+        @include responsive ('Mobile') {
             flex-direction: column-reverse;
-            @extend .b1;
         }
     }
     
-}}
+}
 @import "./conponents/footer";
