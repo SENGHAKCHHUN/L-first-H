@@ -1,0 +1,36 @@
+@import "main";
+nav{
+    position: sticky;
+    top: 0px;
+    background: pink;
+    padding: 5px;
+    @include center;
+    .menu_left{
+        width: 40%;
+        @include center;
+    }
+    .menu_right{
+        width: 60%;
+        ul {
+            display: flex;
+            justify-content: space-around;
+            li{
+                list-style: none;
+                a{
+                    font-size: 20px;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                }
+            }
+            @include responsive(Mobile){
+                display: none;
+            }
+        }
+        .icons-color{
+            display: none;
+            @include responsive(mobile){
+                display: block;
+            }
+        }
+    }
+}
