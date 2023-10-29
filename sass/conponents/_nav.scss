@@ -1,36 +1,33 @@
 @import "main";
-nav{
+nav {
+    background: pink;
     position: sticky;
     top: 0px;
-    background: pink;
-    padding: 5px;
+    z-index: 100;
     @include center;
-    .menu_left{
-        width: 40%;
+    .nav-left{
         @include center;
-    }
-    .menu_right{
-        width: 60%;
-        ul {
-            display: flex;
-            justify-content: space-around;
-            li{
-                list-style: none;
-                a{
-                    font-size: 20px;
-                    text-decoration: none;
-                    text-transform: uppercase;
-                }
-            }
-            @include responsive(Mobile){
-                display: none;
-            }
+        width: 40%;
+        @include responsive ('Mobile') {
+            width: 20%;
         }
-        .icons-color{
-            display: none;
-            @include responsive(mobile){
-                display: block;
+    }
+    ul{
+        @include center;
+        width: 60%;
+        li {
+            list-style: none;
+            a{
+                text-decoration: none;
+                font-size: 25px;
+                padding: 20px;
+                @include responsive ('Mobile') {
+                    font-size: 8px;
+                    display: flex;
+                    justify-content: space-around;
+                }
             }
         }
     }
 }
+            

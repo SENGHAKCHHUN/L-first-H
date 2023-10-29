@@ -8,9 +8,12 @@
     }
     .we{
         margin: 5% 0%;
-        .me{
+        .b1{
             padding: 0% 20%;
             @include center;
+            @include responsive ('Mobile') {
+                flex-direction: column;
+                padding: 0%;
             img{
                 height: 40%;
                 width: 50%;
@@ -19,8 +22,18 @@
                 display: flex;
                 flex-direction: column;
                 padding: 20px;
+                @include responsive("Mobile"){
+                    h3{
+                        text-align: center;
+                    }
+                }
             }
         }
+        .b2{
+            flex-direction: column-reverse;
+            @extend .b1;
+        }
     }
-}
+    
+}}
 @import "./conponents/footer";
