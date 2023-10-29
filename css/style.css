@@ -9,30 +9,44 @@ body img {
 }
 
 nav {
-  position: relative;
+  position: sticky;
+  top: 0px;
   background: pink;
   padding: 5px;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-nav ul {
+nav .menu_left {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+nav .menu_right {
+  width: 60%;
+}
+nav .menu_right ul {
   display: flex;
   justify-content: space-around;
 }
-nav ul li {
+nav .menu_right ul li {
   list-style: none;
 }
-nav ul li a {
+nav .menu_right ul li a {
   font-size: 20px;
   text-decoration: none;
   text-transform: uppercase;
 }
+nav .menu_right .icons-color {
+  display: none;
+}
 
 .container .main {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   text-align: center;
-  margin: 100px 0px;
 }
 .container .main img {
   width: 250px;
@@ -44,10 +58,6 @@ nav ul li a {
   color: rgb(255, 157, 173);
   text-align: center;
 }
-.container h3 {
-  text-align: center;
-  font-size: 25px;
-}
 
 footer {
   background: rgb(255, 157, 173);
@@ -56,8 +66,9 @@ footer {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: 20px;
 }
-footer h1 {
+footer h1, footer p {
   text-align: center;
 }
 footer .icon .fa {

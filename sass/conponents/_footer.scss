@@ -1,0 +1,19 @@
+footer{
+    background: rgb(255, 157, 173);
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    h1,p{
+        text-align: center;
+    }
+    .icon{
+        .fa {
+            font-size: 30px;
+            color: pink;
+            padding: 10px;
+        }
+    }
+}
