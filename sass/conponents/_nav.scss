@@ -1,33 +1,81 @@
 @import "main";
 nav {
-    background: pink;
+    background: $second-color;
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
     position: sticky;
-    top: 0px;
+    top: 0;
     z-index: 100;
-    @include center;
-    .nav-left{
-        @include center;
-        width: 40%;
+    @include responsive ('Mobile') {
+        height: 60px;
+    }
+    .menu {
+        display: none;
         @include responsive ('Mobile') {
-            width: 20%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 20px;
+            i {
+                font-size: 50px;
+            }
         }
     }
-    ul{
-        @include center;
-        width: 60%;
+    #menu_check:checked~ul {
+        left: 0;
+        transition: 0.5s;
+    }
+    .logo {
+        width: 300px;
+        display: flex;
+        align-items: center;
+        h1 {
+            font-size: 30px;
+            margin-left: 40px;
+            color: $main-color;
+        }
+    }
+    ul {
+        width: 360px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin-right: 70px;
+        @include responsive ('Mobile') {
+            position: absolute;
+            transition: 0.5s;
+            left: -100%;
+            top: 40px;
+            background: $third-color;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            width: 90%;
+        }
         li {
-            list-style: none;
-            a{
-                text-decoration: none;
-                font-size: 25px;
-                padding: 20px;
-                @include responsive ('Mobile') {
-                    font-size: 8px;
-                    display: flex;
-                    justify-content: space-around;
+            list-style-type: none;
+            @include responsive ('Mobile') {
+                margin: {
+                    top: 10px;
+                    bottom: 10px;
                 }
+                margin-left: -25px;
+
+            }
+            a {
+                text-decoration: none;
+                font: {
+                    size: 20px;
+                    weight: bold;
+                }
+                color: $main-color;
+            }
+            a:hover {
+                color: $main-color;
+                border-bottom: 4px solid $main-color;
             }
         }
     }
 }
-            

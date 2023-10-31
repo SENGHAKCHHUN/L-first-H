@@ -1,9 +1,10 @@
 @import "../group_mixus/responsive";
 @import "../group_mixus/flex-mixus";
+@import "../conponents/variables";
 body{
     margin: 0px;
     padding: 0px;
-    background: #EBFFEE;
+    background: $bg-color;
     font-family:Agbalumo, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     img {
         width: 100%;
