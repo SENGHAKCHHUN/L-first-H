@@ -1,11 +1,12 @@
 footer{
     background: $third-color;
-    height: 200px;
+    height: 120px;
     @include center;
     flex-direction: column;
     padding: 20px;
-    h1,p{
+    h1{
         text-align: center;
+        
     }
     .icon{
         .fa {

@@ -139,14 +139,14 @@ nav ul li a:hover {
 
 footer {
   background: rgb(255, 182, 182);
-  height: 200px;
+  height: 120px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   padding: 20px;
 }
-footer h1, footer p {
+footer h1 {
   text-align: center;
 }
 footer .icon .fa {
