@@ -28,7 +28,7 @@ function clock() {
 
     let daily = day + ' - ' + gettext(month)+ ' - ' + year;
     let text = "14 - February - 2023 "
-    document.getElementById('day').textContent = text +"  |  "+ daily;
+    document.getElementById('day').textContent = text +"  To  "+ daily;
 }
 
 function zero(number) {
