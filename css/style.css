@@ -119,10 +119,26 @@ nav ul li a:hover {
 .container h3 {
   text-align: center;
 }
+.container .go {
+  background: white;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.container .go h1 {
+  font-size: 35px;
+  color: rgb(255, 182, 182);
+  font-weight: 20px;
+}
+.container .go h1:nth-child(1) {
+  border-bottom: 5px solid rgb(255, 182, 182);
+  border-radius: 20pxl;
+}
 
 footer {
   background: rgb(255, 182, 182);
-  height: 120px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -131,9 +147,10 @@ footer {
 }
 footer h1 {
   text-align: center;
+  color: white;
 }
 footer .icon .fa {
   font-size: 30px;
-  color: pink;
+  color: white;
   padding: 10px;
 }/*# sourceMappingURL=style.css.map */

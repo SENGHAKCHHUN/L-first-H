@@ -21,5 +21,22 @@
     h3{
         text-align: center
     }
+    .go{
+        background: $main-color;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        h1{
+            font-size: 35px;
+            color: $third-color;
+            font-weight: 20px;
+        }
+        h1:nth-child(1){
+            border-bottom: 5px solid $third-color;
+            border-radius: 20pxl
+        }
+    }
 }
 @import "./conponents/footer";
